@@ -1,0 +1,732 @@
+/* 导航栏 */
+.navbar{
+    width: 100%;
+    z-index: 99999;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: all 500ms;
+    box-shadow: 0px 5px 10px rgba(235, 235, 235,.4);
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+nav .head {
+    width: 1200px;
+    height: 67px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.head-listone {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-listone img {
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+}
+
+.head-listtwo {
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 搜索界面 */
+#searchbtn {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.searchBox {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: .98;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    display: none;
+    z-index: 100000;
+}
+
+.input-img {
+    margin-top: 100px;
+    width: 500px;
+    height: 58px;
+    position: relative;
+}
+
+.input-img input {
+    width: 438px;
+    height: 58px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1.25rem;
+    border: 1px solid grey;
+    padding-left: 60px;
+}
+.input-img input:focus{
+    border: 1px solid green;
+}
+.input-img img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.fales {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.fales img {
+    width: 30px;
+    height: 30px;
+}
+#send{
+    display: flex;
+    justify-content: space-between;
+}
+.input-img button{
+    cursor: pointer;
+    width: 50px;
+    height: 58px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: cornsilk;
+}
+.searchContent{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.searchContent a{
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+/* 换肤 */
+#skinbtn {
+    cursor: pointer;
+}
+
+.head-search {
+    width: 25px;
+    height: 25px;
+}
+
+.head-night {
+    width: 25px;
+    height: 25px;
+}
+/* 下拉菜单 */
+.show-list {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+.down-bigbox {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    position: absolute;
+    top: 67px;
+    left: 0;
+    z-index: 100;
+    height: 0px;
+    overflow: hidden;
+    opacity: .5;
+    transition: all 300ms;
+    border-top: 1px solid rgb(241, 251, 255);
+    box-shadow: 0 60px 60px rgba(0, 0, 0, 0.3);
+}
+
+.down-list {
+    width: 1200px;
+    height: 415px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.down-list h3 {
+    width: 1200px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.down-list span {
+    font-size: 13px;
+}
+
+.down-list-bigbox {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.down-list-smallbox {
+    width: 230px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.down-list-smallbox:hover {
+    cursor: pointer;
+}
+
+.down-list-smallbox:hover img {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.down-list-smallbox a {
+    width: 230px;
+    height: 130px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.down-list-smallbox img {
+    width: 230px;
+    height: 130px;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+.down-list ul {
+    width: 1200px;
+    display: flex;
+}
+
+.down-list ul li a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #133467;
+    margin-right: 20px;
+}
+
+
+/* banner */
+.banner {
+    height: 498px;
+    /* margin-top: 67px; */
+    position: relative;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.theme {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    color: white;
+}
+
+.theme h1 {
+    font-size: 50px;
+}
+
+.theme p {
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+/* 卡片列表 */
+.card {
+    width: 1250px;
+    margin-top: 20px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+}
+
+.cardOne {
+    position: relative;
+    width: 370px;
+    height: 420px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: white;
+    transition: all 500ms;
+    box-shadow: 0px 10px 10px lightgrey;
+}
+
+.cardOne:hover {
+    cursor: pointer;
+    transform: translate(0px, -10px) !important;
+    box-shadow: 0px 20px 20px lightgrey !important;
+}
+
+.cardOne img {
+    width: 370px;
+    height: 220px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.cardOne-small {
+    width: 320px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.cardOne-small a {
+    width: 320px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #133467;
+}
+
+.cardOne-small h2 {
+    width: 320px;
+    height: 26px;
+    overflow: hidden;
+    font-size: 20px;
+    margin-top: -40px;
+}
+
+.cardOne-small span {
+    font-size: 14px;
+}
+
+.logohead img {
+    width: 35px;
+    height: 35px;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transition: all 300ms;
+}
+
+.cardOne:hover .logohead img {
+    box-shadow: 0px 5px 10px grey;
+}
+
+/* 分页 */
+.paging{
+    width: 100%;
+    height: 46px;
+    margin-top: 50px;
+}
+.pagingBox{
+    width: 180px;
+    height: 46px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.pagingBox p{
+    font-size: 16px;
+    line-height: 46px;
+}
+.pagingBox-circle{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px lightgrey;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 500ms;
+}
+.deg180{
+    transform: rotate(180deg);
+}
+.pagingBox-circle:hover{
+    cursor: pointer;
+    box-shadow: 0px 4px 7px lightgrey;
+}
+.pagingBox-circle img{
+    width: 18px;
+    height: 15px;
+}
+/* 尾部 */
+footer {
+    height: 232px;
+    background-color: #133467;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.foot {
+    width: 680px;
+    height: 232px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.foot-img {
+    width: 680px;
+    height: 21px;
+    display: flex;
+    justify-content: center;
+}
+
+.foot img {
+    width: 20px;
+    height: 20px;
+    margin: 0 15px;
+}
+
+.foot span {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 20px;
+}
+/* 分类 */
+.classifyOut{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.classify{
+    margin-top: 20px;
+    width: 900px;
+    height: 30px;
+    background-color: whitesmoke;
+    box-shadow: 0 5px 5px lightgray;
+    border-radius: 5px;
+}
+.classify ul{
+    width: 900px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.classify ul li{
+    text-align: center;
+    width: 100px;
+    height: 30px;
+}
+.classify ul li:hover{
+    background-color: lightgray;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.classify ul li a{
+    line-height: 30px;
+}
+@media screen and (max-width: 375px) {
+    nav .head {
+        width: 375px;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .displayNone{
+        display: block;
+    }
+    .head-listone {
+        width: 25px;
+        margin-left: 10px;
+    }
+
+    .head-listtwo {
+        width: 25px;
+        margin-right: 10px;
+    }
+
+    .head a {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 50px;
+    }
+
+    .display-none {
+        display: none;
+    }
+
+    .showListImg {
+        transform: rotate(90deg);
+    }
+
+    .head-night {
+        display: none;
+    }
+
+    .banner {
+        /* margin-top: 50px; */
+        width: 375px;
+        height: 315px;
+    }
+
+    .theme {
+        top: 30%;
+        left: 25%;
+        width: 200px;
+        height: 100px;
+    }
+
+    .theme h1 {
+        font-size: 32px;
+    }
+
+    .theme p {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .card {
+        width: 375px;
+        height: 100%;
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+
+    .cardOne {
+        width: 333px;
+        height: 400px;
+        margin-top: 20px;
+    }
+
+    .cardOne img {
+        width: 333px;
+        height: 200px;
+    }
+
+    .cardOne-small {
+        width: 290px;
+        height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+
+    .logohead img {
+        width: 35px;
+        height: 35px;
+        border: 2px solid white;
+        border-radius: 50%;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        transition: all 300ms;
+    }
+    .paging{
+        width: 375px;
+        height: 40px;
+    }
+    .pagingBox{
+        height: 40px;
+    }
+    .pagingBox p{
+        font-size: 14px;
+        line-height: 40px;
+    }
+    .pagingBox-circle{
+        width: 40px;
+        height: 40px;
+    }
+    footer {
+        width: 375px;
+        height: 180px;
+    }
+
+    .foot {
+        width: 375px;
+        height: 180px;
+    }
+
+    .searchBox {
+        width: 375px;
+    }
+    /* 下拉菜单 */
+    .down-bigbox {
+        width: 0px;
+        height: 667px;
+        background-color: white;
+        position: fixed;
+        top: 0px;
+        opacity: 0;
+        z-index: 100000;
+        overflow: hidden;
+        align-content: flex-start;
+        transition: all 300ms;
+    }
+    .down-list {
+        width: 335px;
+        height: 553px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+    /* 关闭按钮 */
+    .falesTwo {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 50%;
+        margin: 20px 0 0px 320px;
+    }
+    .falesTwo img{
+        width: 20px;
+        height: 20px;
+    }
+    .phone ul{
+        width: 335px;
+        height: 140px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+    .phone ul li{
+        width: 335px;
+        height: 24px;
+    }
+    .phone a{
+        line-height: 24px;
+        font-size: 18px !important;
+        font-weight: normal !important;
+        color: black !important;
+    }
+    .down-list-bigbox{
+        width: 335px;
+        height: 200px;
+        flex-wrap: nowrap;
+        overflow: scroll;
+    }
+    /* 滚动条消失 */
+    .down-list-bigbox::-webkit-scrollbar{
+        display: none;
+    }
+    .down-list-smallbox{
+        margin-right: 30px;
+    }
+    .down-list-bigbox h3{
+        font-size: 16px;
+    }
+    .down-list ul:nth-child(5){
+        width: 335px;
+        height: 52px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .down-list ul:nth-child(5) li{
+        width: 80px;
+        height: 25px;
+    }
+    .down-list ul:nth-child(5) a{
+        font-size: 14px;
+        line-height: 25px;
+    }
+    /* 换肤 */
+    #skinbtnTwo{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: rgb(236, 236, 236);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 320px;
+    }
+    
+    /* 搜索 */
+    .input-img {
+        width: 335px;
+        height: 45px;
+    }
+    .input-img input{
+        font-size: 1rem;
+        width: 270px;
+        height: 45px;
+        padding-left: 40px;
+    }
+    .input-img img{
+        width: 20px;
+        height: 20px;
+    }
+    .fales{
+        width: 30px;
+        height: 30px;
+        border: 1px solid black !important;
+    }
+    .fales img{
+        width: 15px;
+        height: 15px;
+    }
+    .input-img button{
+        height: 45px;
+    }
+    /* 分类 */
+    .classify{
+        width: 315px;
+    }
+    .classify ul{
+        width: 315px;
+    }
+    .classify ul li{
+        width: 35px;
+    }
+    .classify ul li a{
+        font-size: 14px;
+    }
+}

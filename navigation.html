@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" id="skin" href="css/morning.css">
+    <title>导航</title>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar" id="navbar">
+        <div class="head">
+            <ul class="head-listone">
+                <li class="display-none fontWeightBold" id="home"><a href="index.html">首页</a></li>
+                <li class="display-none"><a href="about.html">关于</a></li>
+                <li class="display-none"><a href="friend.html">友链</a></li>
+                <li class="display-none"><a href="navigation.html">导航</a></li>
+                <li class="show-list">
+                    <img src="images/more.png" id="showListImg" class="showListImg">
+                </li>
+                <!-- 下拉菜单 -->
+                <div class="down-bigbox" id="down-bigbox">
+                    <div class="falesTwo displayNone" id="falesTwoBtn">
+                        <img src="images/false1.png" id="falesTwoBtnPhone">
+                    </div>
+                    <div class="down-list">
+                        <div class="phone displayNone">
+                            <ul>
+                                <li><a href="">投资</a></li>
+                                <li><a href="">创业</a></li>
+                                <li><a href="">生活</a></li>
+                                <li><a href="navigation.html">导航</a></li>
+                            </ul>
+                        </div>
+                        <h3>Recent articles</h3>
+                        <div class="down-list-bigbox">
+                            <div class="down-list-smallbox">
+                                <a href="projectTest.html"><img src="images/downlist1.jpg" alt=""></a>
+                                <h3>项目验收的准备与应对</h3>
+                                <span>a day ago</span>
+                            </div>
+                            <div class="down-list-smallbox">
+                                <a href=""><img src="images/downlist2.jpeg" alt=""></a>
+                                <h3>下一个三十年</h3>
+                                <span>a day ago</span>
+                            </div>
+                            <div class="down-list-smallbox">
+                                <a href=""><img src="images/downlist3.jpeg" alt=""></a>
+                                <h3>突发状况处理</h3>
+                                <span>a day ago</span>
+                            </div>
+                            <div class="down-list-smallbox">
+                                <a href=""><img src="images/downlist4.jpg" alt=""></a>
+                                <h3>从人工智能大会看行业趋势</h3>
+                                <span>a day ago</span>
+                            </div>
+                        </div>
+                        <h3>Tags</h3>
+                        <ul>
+                            <li><a href="">创业</a></li>
+                            <li><a href="">城市印象</a></li>
+                            <li><a href="">徒步</a></li>
+                            <li><a href="">技能</a></li>
+                            <li><a href="">投资</a></li>
+                            <li><a href="">生活</a></li>
+                            <li><a href="">电影</a></li>
+                            <li><a href="">阅读</a></li>
+                        </ul>
+                    </div>
+                    <div id="skinbtnTwo">
+                        <img src="images/night.png" class="head-night-phone displayNone" id="head-night-phone">
+                    </div>
+                </div>
+            </ul>
+            <a href="" class="displayNone">主题</a>
+            <ul class="head-listtwo">
+                <li id="searchbtn"><img src="images/search.png" id="head-search" class="head-search"></li>
+                <li id="skinbtn"><img src="images/night.png"  id="head-night" class="head-night"></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- 内容 -->
+    <!-- banner -->
+    <div class="banner" id="banner">
+        <img src="images/bannerdh.jpg" class="banner-img">
+        <div class="theme">
+            <h1>导航</h1>
+        </div>
+    </div>
+    <section>
+        <!-- 表格 -->
+        <table class="navigationTable">
+            <tr class="navigationTable-one">
+                <td colspan="3"><a href="index.html">首页</a><a href="about.html">关于</a><a href="friend.html">友链</a></td>
+            </tr>
+            <tr>
+                <td><a href="">投资</a></td>
+                <td><a href="">创业</a></td>
+                <td><a href="">生活</a></td>
+            </tr>
+        </table>     
+    </section>
+    <!-- 尾部 -->
+    <footer>
+        <div class="foot">
+            <div class="foot-img">
+                <a href=""><img src="images/facebook.png" alt=""></a>
+                <a href=""><img src="images/twitter.png" alt=""></a>
+                <a href=""><img src="images/wife.png" alt=""></a>
+            </div>
+            <span>iNote © 2021</span>
+        </div>
+    </footer>
+    <!-- 搜索界面 -->
+    <div class="searchBox" id="searchBox">
+        <div class="input-img">
+            <form id="send">
+                <input type="search" id="keyword" placeholder="Type to search">
+                <img src="images/search2.png" alt="">
+                <button type="submit">搜索</button>
+            </form>
+        </div>
+        <div class="searchContent" id="searchContent">
+            
+        </div>
+        <div class="fales" id="falesbtn">
+            <img src="images/false1.png" id="falseImg">
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="js/skinNavigation.js"></script>
+    <script src="js/data.js"></script>
+</body>
+
+</html>

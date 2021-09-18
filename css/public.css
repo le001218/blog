@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ol li,
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.fontWeightBold{
+    font-weight: bold;
+}
+.displayNone{
+    display: none;
+}

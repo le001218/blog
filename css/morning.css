@@ -1,0 +1,218 @@
+/* 公共 */
+body{
+    background-color: white;
+}
+/* 导航栏 */
+.navbar{
+    background-color: white;
+    box-shadow: 0px 5px 10px rgba(235, 235, 235,.4);
+}
+.head-listone a{
+    color: black;
+}
+/* 搜索界面 */
+.searchBox {
+    background-color: white;
+}
+.input-img input {
+    border: 1px solid grey;
+    background-color: white;
+    /* 输入字体颜色 */
+    -webkit-text-fill-color: grey;
+    /* 光标颜色 */
+    caret-color: black;
+}
+.fales {
+    border: 2px solid black;
+}
+.input-img button{
+    border: 1px solid black;
+    background-color: cornsilk;
+    color: black;
+}
+.searchContent a{
+   color: black;
+}
+
+/* 下拉菜单 */
+.down-bigbox {
+    background-color: white;
+    border-top: 1px solid rgb(241, 251, 255);
+}
+.down-list h3 {
+   color: black;
+}
+.down-list span {
+    color: black;
+}
+.down-list ul li a {
+    color: #133467;
+}
+/* 卡片列表 */
+.cardOne {
+    background-color: white;
+    box-shadow: 0px 10px 10px lightgrey;
+}
+.cardOne:hover {
+    box-shadow: 0px 20px 20px lightgrey !important;
+}
+.cardOne-small a {
+    color: #133467;
+}
+.cardOne-small h2 {
+    color: black;
+}
+.cardOne-small span {
+    color: black;
+}
+.cardOne:hover .logohead img {
+    box-shadow: 0px 5px 10px grey;
+}
+/* 分页 */
+.pagingBox-circle{
+    box-shadow: 0px 2px 5px lightgrey;
+    background-color: #fff;
+}
+.pagingBox-circle:hover{
+    box-shadow: 0px 4px 7px lightgrey;
+}
+.pagingBox p{
+    color: black;
+}
+/* 尾部 */
+footer {
+    background-color: #133467;
+}
+/* 分类 */
+.classify{
+    background-color: whitesmoke;
+    box-shadow: 0 5px 5px lightgray;
+}
+.classify ul li:hover{
+    background-color: lightgray;
+}
+.classify ul li a{
+    color: black;
+}
+
+
+
+
+
+/* 文章1HTML */
+/* 文章 */
+.article h1{
+    color: black;
+}
+.articleTime span,
+.articleTime a{
+    color: #133467;
+}
+.articleTime i{
+    color: black;
+}
+.article p{
+    color: black;
+}
+.article p span{
+    color: black;
+}
+.article ol li{
+    color: black;
+}
+.article h3{
+    color: black;
+}
+.articleLast{
+    color: #133467;
+}
+/* 作者 */
+.writer{
+    border-top: 1px solid rgb(240, 240, 240);
+    border-bottom: 1px solid rgb(240, 240, 240);
+}
+.writerBoxText a{
+    color: #133467;
+}
+.writerBoxText p{
+    color: black;
+}
+/* 评论 */
+.comment{
+    background-color: white;
+}
+.under h3{
+    color: black;
+}
+.under p{
+    color: black;
+}
+.under h6{
+    color: grey;
+}
+
+
+/* 导航HTML */
+/* 表格 */
+.navigationTable-one{
+    background-color: rgb(241, 241, 241);
+}
+.navigationTable a{
+    color: black;
+}
+
+
+/* 友链HTML */
+/* 表格 */
+.friendTable-two,
+.friendTable-one{
+    background-color: rgb(241, 241, 241);
+}
+.friendTable a{
+    color: black;
+}
+
+
+/* 关于HTML */
+.textP{
+    color: black;
+}
+
+
+@media screen and (max-width: 375px) {
+    /* 下拉菜单 */
+    /* 关闭按钮 */
+    .falesTwo {
+        border: 1px solid black;
+    }
+    .phone a{
+        color: black !important;
+    }
+    /* 换肤 */
+    #skinbtnTwo{
+        background-color: rgb(236, 236, 236);
+    }
+    /* 搜索 */
+    .fales{
+        border: 1px solid black !important;
+    }
+    .displayNone{
+        color: black;
+    }
+
+
+    /* 文章1HTML */
+    /* 卡片按钮 */
+    .phoneCardBtn button {
+        background-color: white;
+        box-shadow: 0px 3px 10px grey;
+    }
+    /* 侧边栏 */
+    aside {
+        background-color: #fff;
+    }
+    .asideImg {
+        background-color: #fff;
+        box-shadow: 0px 5px 5px lightgray;
+    }
+}
